@@ -92,7 +92,7 @@ body {
 
 .a_s, .i_a, .c_e {
     flex-basis: 400px;
-    padding: 10px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
