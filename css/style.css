@@ -103,6 +103,23 @@ body {
     margin: 10px;
 }
 
+.botao1 {
+    font-size: 32px;
+    margin-top: 30px;
+    background-color: #d9c57a;
+    color: #FFF;
+    padding: 18px;
+    border-radius: 35px;
+    text-decoration: none;
+    
+}
+
+.botao1:hover {
+    transition: background .4s;
+    background-color: #ffeba4;
+    color: #1b1b1b;
+    
+}
 footer {
     background-color: #1b1b1b;
 }
@@ -131,6 +148,9 @@ footer {
 .redes {
     margin-left: 10%;
     display: flex;
+}
+.redes img {
+    margin-left: 10px;
 }
 .redes a {
     margin: 0.5%;
