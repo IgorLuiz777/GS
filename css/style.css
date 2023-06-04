@@ -230,7 +230,7 @@ footer {
 }
 
 .as-imagem-parte2, .as-texto-parte2 {
-    margin: 50px;
+    padding: 50px;
 }
 
 .as-texto-parte2{
@@ -239,4 +239,9 @@ footer {
 
 .as-imagem-parte2{
     width: 50%;
+}
+
+.as-divisao {
+    height: 400px;
+    background-color: #d9c57a;
 }
