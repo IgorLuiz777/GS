@@ -250,21 +250,35 @@ footer {
     align-items: center;
     padding: 20px;
 }
-  
+
 .divisao-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-  
-.as-divisao1, .as-divisao2, .as-divisao3, .as-divisao4 {
-    width: 900px;
+
+.as-divisao1 {
+    width: 300px;
+    height: 500px;
     background-color: #1b1b1b;
 }
 
-.as-divisao1 {
-    width: 500px;
-    background-color: #1b1b1b;
+.as-divisao2 {
+    width: 300px;
+    height: 500px;
+    background-color: #8f3535;
+}
+
+.as-divisao3 {
+    width: 300px;
+    height: 500px;
+    background-color: #199924;
+}
+
+.as-divisao4 {
+    width: 300px;
+    height: 500px;
+    background-color: #3e358f;
 }
 
   
