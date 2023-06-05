@@ -261,10 +261,19 @@ footer {
 }
 
 .as-divisao1, .as-divisao2, .as-divisao3, .as-divisao4 {
-    width: 300px;
-    height: 450px;
-    margin: 60px 15px 15px 0;
+    width: 400px;
+    height: 600px;
+    margin: 30px;
     text-align: center;
+}
+
+.as-divisao1, .as-divisao2, .as-divisao3, .as-divisao4, h3{
+    font-size: 25px;
+}
+
+.as-divisao1, .as-divisao2, .as-divisao3, .as-divisao4, p{
+    margin-top: 10px;
+    font-size: 20px;
 }
 
 .as-divisao1 img{
@@ -278,12 +287,23 @@ footer {
 }
 
 .as-divisao3 img{
+    width: 72%;
+    margin-top: 35px;
+}
+
+.as-divisao4 img{
     width: 70%;
     margin-top: 35px;
 }
 
-.as-divisao4 {
-    background-color: #3e358f;
+  
+.as-imagem-parte3 {
+    margin: 60px 30px 30px 30px;
+    width: 650px;
+
 }
 
-  
+.as-texto-parte3 {
+    width: 50%;
+    margin: 30px;
+}
