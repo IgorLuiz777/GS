@@ -257,24 +257,29 @@ footer {
 .divisao-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .as-divisao1, .as-divisao2, .as-divisao3, .as-divisao4 {
-    
     width: 300px;
-    height: 500px;
+    height: 450px;
+    margin: 60px 15px 15px 0;
+    text-align: center;
 }
 
-.as-divisao1 {
-    background-color: #1b1b1b;
+.as-divisao1 img{
+    width: 70%;
+    margin-top: 50px;
 }
 
-.as-divisao2 {
-    background-color: #8f3535;
+.as-divisao2 img{
+    width: 70%;
+    margin-top: 35px;
 }
 
-.as-divisao3 {
-    background-color: #199924;
+.as-divisao3 img{
+    width: 70%;
+    margin-top: 35px;
 }
 
 .as-divisao4 {
