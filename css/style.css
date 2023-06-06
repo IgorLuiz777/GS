@@ -330,3 +330,17 @@ footer {
 #ia-img3 {
     margin-top: 40px;
 }
+
+
+#ce_icone1, #ce_icone2, #ce_icone3 {
+    width: 70%;
+    margin-top: 50px;
+}
+
+#ce_icone1 {
+    width: 72%;
+}
+
+#img3-ce {
+    margin-top: -30px;
+}
