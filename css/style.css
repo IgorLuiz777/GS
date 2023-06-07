@@ -1,3 +1,5 @@
+/* INDEX */
+
 @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
@@ -13,8 +15,10 @@ body {
 }
 
 
-#menu{
+#menu {
     background-color: #1b1b1b;
+    overflow: auto;
+    padding-top: 10px; /* Adicione esta propriedade */
 }
 
 #menu ul {
@@ -37,7 +41,7 @@ body {
     padding: 20px;
     display: inline-block;
     justify-content: flex-end;
-    align-content:flex-end;
+    align-content: flex-end;
     text-decoration: none;
     display: inline-block;
 }
@@ -47,8 +51,7 @@ body {
     color: #1b1b1b;
 }
 
-
-.logo{
+.logo {
     position: absolute;
     margin-top: 3px;
     margin-left: 10px;
@@ -60,13 +63,18 @@ body {
     justify-content: space-around;
 }
 
+.carrossel {
+    width: 52%;
+    align-items: center;
+}
+
 .texto-intro, .carrossel {
     margin: 30px;
 }
 
 .texto-intro{
-    min-width: 400px;
-    max-width: 500px;
+    min-width: 350px;
+    max-width: 400px;
 }
 
 
@@ -121,6 +129,8 @@ body {
     color: #1b1b1b;
     
 }
+
+
 footer {
     background-color: #1b1b1b;
 }
@@ -130,7 +140,7 @@ footer {
     grid-template-columns: repeat(3, 3fr);
 }
 
-.logo-footer img{
+.logo-footer img {
     margin-left: 10%;
     margin-top: 4%;
 }
@@ -139,7 +149,6 @@ footer {
     margin: 1% 0 1% 10%;
     font-size: 22px;
     font-weight: 600;
-    
 }
 
 .logo-footer p {
@@ -150,9 +159,11 @@ footer {
     margin-left: 10%;
     display: flex;
 }
+
 .redes img {
     margin-left: 10px;
 }
+
 .redes a {
     margin: 0.5%;
     margin-bottom: 30px;
@@ -172,6 +183,7 @@ footer {
     margin-left: 8%;
     list-style: none;
 }
+
 .contato li {
     margin: 1.5%;
 }
@@ -190,6 +202,7 @@ footer {
     margin-left: 8%;
     list-style: none;
 }
+
 .sobre li {
     margin: 1.5%;
 }
@@ -199,11 +212,19 @@ footer {
     text-decoration: none;
     font-size: 26px;
 }
+
 .sobre a:hover {
     transition: background .4s;
     color: #FFF;
 }
 
+
+
+
+
+
+
+/* PAGINAS SEGUNDÁRIAS */
 
 .intro-as {
     display: flex;
@@ -221,7 +242,7 @@ footer {
 }
 
 .carrossel-as {
-     width: 700px;  
+     width: 650px;  
 }
 
 .as-parte2 {
@@ -296,7 +317,6 @@ footer {
     margin-top: 35px;
 }
 
-  
 .as-imagem-parte3 {
     margin: 60px 30px 30px 30px;
     width: 650px;
@@ -343,4 +363,285 @@ footer {
 
 #img3-ce {
     margin-top: -30px;
+}
+
+
+
+
+
+
+/* FORMULÁRIO */
+
+.formulario {
+    width: 600px;
+    margin-top: 100px;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.form1 {
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bolder;
+}
+  
+.form label {
+    color: #000000;
+    margin-bottom: 5px;
+}
+  
+.form input, .form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+  
+.form textarea {
+    min-height: 13rem;
+    resize: vertical;
+}
+  
+.form a {
+    display: block;
+    padding: 20px;
+    background: #262626;
+    color: #eff0e8;
+    font-size: 20px;
+    font-weight: bolder;
+    text-decoration: none;
+    margin-bottom: 100px;
+}
+  
+.form a:hover {
+    transition: background .4s;
+    background: #F2E49B;
+    color: #262626;
+}
+
+.titulo2 {
+    margin-top: 100px;
+    font-size: 42px;
+}
+
+
+
+
+/* BREAKPOINTS */
+
+
+
+/* TABLETS  768px */
+
+/* INDEX */
+@media (max-width: 768px) {
+
+.intro {
+    flex-direction: column;
+}
+
+.texto-intro, .carrossel {
+    margin: 20px;
+}
+
+.texto-intro {
+    max-width: 90%;
+    text-align: justify;
+}
+
+.titulo1 {
+    font-size: 36px;
+}
+
+.texto1 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+  .a_s, .i_a, .c_e {
+    flex-basis: 100%;
+    padding: 10px;
+}
+
+.a_s img, .i_a img, .c_e img {
+    margin: 5px;
+    width: 250px;
+}
+
+.botao1 {
+    font-size: 24px;
+    padding: 12px;
+    border-radius: 30px;
+}
+
+/* FORMS */
+.formulario {
+    width: 90%;
+}
+
+.form1 {
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.form label {
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.form input, .form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form textarea {
+    min-height: 13rem;
+    resize: vertical;
+}
+
+.form a {
+    display: block;
+    padding: 20px;
+    background: #262626;
+    color: #eff0e8;
+    font-size: 20px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.form a:hover {
+    background: #F2E49B;
+    color: #262626;
+}
+
+.titulo2 {
+    font-size: 42px;
+}
+
+
+
+/* FOOTER */
+.footer {
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.logo-footer {
+    text-align: center;
+}
+
+.redes {
+    justify-content: center;
+}
+
+.contato, .sobre {
+    text-align: center;
+}
+
+.contato ul, .sobre ul {
+    padding-left: 0;
+    text-align: center;
+}
+
+.sobre a {
+    font-size: 20px;
+}
+
+
+
+/* HEADER */
+
+#menu {
+    margin-top: -150px;
+    padding-top: 160px;
+}
+
+#menu ul {
+    margin-left: 0;
+    text-align: center;
+}
+
+#menu ul li {
+    display: block;
+}
+
+#menu ul li a {
+    margin: 0;
+    padding: 10px;
+    display: block;
+}
+
+.logo {
+     position: relative;
+    margin-top: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.logo::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;  
+    background-color: #1b1b1b;
+}
+
+}
+
+
+/* SMARTPHONE 600 AND DOWN */
+
+/* HEADER */
+@media (max-width: 700px) {
+#menu {
+    margin-top: -150px;
+    padding-top: 160px;
+}
+
+#menu ul {
+    margin-left: 0;
+    text-align: center;
+}
+
+#menu ul li {
+    display: block;
+}
+
+#menu ul li a {
+    margin: 0;
+    padding: 10px;
+    display: block;
+}
+
+.logo {
+     position: relative;
+    margin-top: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.logo::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;  
+    background-color: #1b1b1b;
+}
+
 }
