@@ -229,21 +229,24 @@ footer {
 .intro-as {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-}
+  }
 
 .texto-intro-as, .carrossel-as{
     padding: 30px;
 }
 
 .texto-intro-as {
-    width: 50%;
+    flex: 1 1 50%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
 
-}
 
 .carrossel-as {
-     width: 650px;  
-}
+    flex: 1 1 50%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
 
 .as-parte2 {
     display: flex;
@@ -440,167 +443,159 @@ footer {
 /* INDEX */
 @media (max-width: 768px) {
 
-.intro {
-    flex-direction: column;
-}
-
-.texto-intro, .carrossel {
-    margin: 20px;
-}
-
-.texto-intro {
-    max-width: 90%;
-    text-align: justify;
-}
-
-.titulo1 {
-    font-size: 36px;
-}
-
-.texto1 {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-  .a_s, .i_a, .c_e {
-    flex-basis: 100%;
-    padding: 10px;
-}
-
-.a_s img, .i_a img, .c_e img {
-    margin: 5px;
-    width: 250px;
-}
-
-.botao1 {
-    font-size: 24px;
-    padding: 12px;
-    border-radius: 30px;
-}
-
-/* FORMS */
-.formulario {
-    width: 90%;
-}
-
-.form1 {
-    margin-top: 10px;
-    display: block;
-    width: 100%;
-    font-size: 20px;
-    font-weight: bolder;
-}
-
-.form label {
-    color: #000000;
-    margin-bottom: 5px;
-}
-
-.form input, .form textarea {
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.form textarea {
-    min-height: 13rem;
-    resize: vertical;
-}
-
-.form a {
-    display: block;
-    padding: 20px;
-    background: #262626;
-    color: #eff0e8;
-    font-size: 20px;
-    font-weight: bolder;
-    text-decoration: none;
-}
-
-.form a:hover {
-    background: #F2E49B;
-    color: #262626;
-}
-
-.titulo2 {
-    font-size: 42px;
-}
-
-
-
-/* FOOTER */
-.footer {
-    grid-template-columns: 1fr;
-    gap: 30px;
-}
-
-.logo-footer {
-    text-align: center;
-}
-
-.redes {
-    justify-content: center;
-}
-
-.contato, .sobre {
-    text-align: center;
-}
-
-.contato ul, .sobre ul {
-    padding-left: 0;
-    text-align: center;
-}
-
-.sobre a {
-    font-size: 20px;
-}
-
-
-
-/* HEADER */
-
-#menu {
-    margin-top: -150px;
-    padding-top: 160px;
-}
-
-#menu ul {
-    margin-left: 0;
-    text-align: center;
-}
-
-#menu ul li {
-    display: block;
-}
-
-#menu ul li a {
-    margin: 0;
-    padding: 10px;
-    display: block;
-}
-
-.logo {
-     position: relative;
-    margin-top: 0;
-    padding: 0;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
-.logo::after {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 0;
-    right: 0;  
-    background-color: #1b1b1b;
-}
+    body {
+        background-color: #eeeee6;
+    }
+    
+    #menu {
+        background-color: #1b1b1b;
+        overflow: auto;
+        padding-top: 10px;
+    }
+    
+    #menu ul {
+        margin-left: 27%;
+        list-style: none;
+        padding: 0;
+    }
+    
+    #menu ul li {
+        display: inline;
+    }
+    
+    #menu ul li a {
+        margin-left: 20px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: bolder;
+        color: #d9c57a;
+        padding: 20px;
+        display: inline-block;
+        justify-content: flex-end;
+        align-content: flex-end;
+        text-decoration: none;
+        display: inline-block;
+    }
+    
+    #menu ul li a:hover {
+        background-color: #d9c57a;
+        color: #1b1b1b;
+    }
+    
+    .logo {
+        position: absolute;
+        margin-top: 3px;
+        margin-left: 10px;
+    }
+    
+    .intro {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .carrossel {
+        width: 52%;
+        align-items: center;
+    }
+    
+    .texto-intro,
+    .carrossel {
+        margin: 30px;
+    }
+    
+    .texto-intro {
+        min-width: 350px;
+        max-width: 400px;
+    }
+    
+    .titulo1 {
+        color: #1b1b1b;
+        font-size: 42px;
+        text-align: left;
+        letter-spacing: -1px;
+    }
+    
+    .texto1 {
+        color: #1b1b1b;
+        margin-top: 7px;
+        margin-bottom: 30px;
+        font-size: 22px;
+        font-weight: 500;
+    }
+    
+    .divisao {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .a_s,
+    .i_a,
+    .c_e {
+        flex-basis: 400px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .a_s img,
+    .i_a img,
+    .c_e img {
+        margin: 10px;
+    }
+    
+    .botao1 {
+        font-size: 32px;
+        margin-top: 30px;
+        background-color: #d9c57a;
+        color: #fff;
+        padding: 18px;
+        border-radius: 35px;
+        text-decoration: none;
+    }
+    
+    .botao1:hover {
+        transition: background 0.4s;
+        background-color: #ffeba4;
+        color: #1b1b1b;
+    }
+    
+    footer {
+        background-color: #1b1b1b;
+    }
+    
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(3, 3fr);
+    }
+    
+    .logo-footer img {
+        margin-left: 10%;
+        margin-top: 4%;
+    }
+    
+    .logo-footer p {
+        margin: 1% 0 1% 10%;
+        font-size: 22px;
+        font-weight: 600;
+    }
+    
+    .logo-footer p {
+        color: #d9c57a;
+    }
+    
+    .redes {
+        margin-left: 10%;
+        display: flex;
+    
 
 }
 
+}
 
 /* SMARTPHONE 600 AND DOWN */
 
@@ -627,7 +622,7 @@ footer {
 }
 
 .logo {
-     position: relative;
+    position: relative;
     margin-top: 0;
     padding: 0;
     margin-left: auto;
@@ -642,6 +637,34 @@ footer {
     left: 0;
     right: 0;  
     background-color: #1b1b1b;
+}
+
+/* INDEX */
+
+.botao1 {
+    display: block;
+    width: 60%;
+    margin-top: 10px;
+}
+
+.botao1 {
+    size: 20px;
+    font-size: 25px;
+}
+.titulo1 {
+    font-size: 24px;
+}
+  
+.texto1 {
+    font-size: 16px;
+}
+
+.a_s, .i_a, .c_e {
+    flex: 1 1 100%;
+}
+  
+.a_s img, .i_a img, .c_e img {
+    max-width: 100%;
 }
 
 }
